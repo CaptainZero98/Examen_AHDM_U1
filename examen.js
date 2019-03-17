@@ -11,6 +11,8 @@ var cuentaCom=0;
 
 
 function capturaUsuario(){
+if (nomUsuariojs.value!=""||descImajs.value!=""||urlImajs.value!="") {
+
 var seccionjs=document.createElement("div");
 seccionjs.setAttribute("id","div"+i);
 
@@ -112,7 +114,16 @@ descImajs.value="";
 urlIma.value="";
 
 i++;
+}else{
+
+alert("Ingresa datos validos");
+
 }
+
+
+
+}
+
 
 function mostrarComentarios(c){
 
